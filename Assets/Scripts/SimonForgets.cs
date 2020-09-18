@@ -1160,7 +1160,7 @@ public class SimonForgets : MonoBehaviour
                     if (_strikeTP)
                         yield return "strikemessage {0}, button " + temp + " (" + _colorOrder[temp - 1] + "), input at position " + i + " was incorrect, expected " + _colorOrder[_correctColorIndex];
                     if (last_waitS1 && !_waitS1)
-                        yield return "awardpoints 2";
+                        yield return "awardpoints 5";
                     yield return new WaitForSeconds(0.1f);
                 }
             }
